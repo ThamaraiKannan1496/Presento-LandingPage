@@ -17,28 +17,54 @@
     />
   </head>
   <body>
-    <header>
+    <!-- dummy header -->
+    <!-- <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+        <h1 class="logo me-auto">
+          <a href="index.html">Presento<span>.</span></a>
+        </h1>
+        <nav id="navbar" class="navbar  order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link active" href="#hero">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#team">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Drop Down</span></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown">
+                  <a href="#"><span>Deep Drop Down</span> </a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#about" class="get-started-btn">Get Started</a>
+      </div>
+    </header> -->
+
+    <!-- dummy header ends -->
+    <!-- <header>
       <div class="container">
         <div class="row justify-content-between align-items-center">
-          <div class="col-lg-2 col-md-3 col-6">
-            <div class="logo"></div>
-          </div>
-          <div class="col-lg-8 col-md-6 col-6">
-            <div class="row justify-content-end">
-              <div class="col-lg-8 col-md-none">
-                <div class="nav-menu d-none d-lg-block"></div>
-              </div>
-              <div class="col-lg-2 col-md-5 col-6">
-                <div class="nav-button"></div>
-              </div>
-              <div class="col-lg-2 col-md-3 col-4 d-lg-none">
-                <div class="hamburger"></div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <!-- banner -->
       <section class="banner">
@@ -313,172 +339,285 @@
       <!-- dummy tabs start-->
       <section class="tab-section">
         <div class="container">
-          <div class="row gy-5">
-            <ul
-              class="nav nav-tabs d-flex justify-content-between"
-              id="myTab"
-              role="tablist"
+          <ul
+            class="nav row g-3 nav-tabs d-flex justify-content-between"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="col-3 nav-item" role="presentation">
+              <button
+                class="nav-link active d-flex justify-content-center align-items-center"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                <div class="tab-icon">
+                  <i class="las la-sun"></i>
+                </div>
+
+                <h3>Modi sit est dela pireda nest</h3>
+              </button>
+            </li>
+            <li class="col-3 nav-item" role="presentation">
+              <button
+                class="nav-link d-flex justify-content-center align-items-center"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                <div class="tab-icon">
+                  <i class="las la-people-carry"></i>
+                </div>
+
+                <h3>Unde praesenti mara setra le</h3>
+              </button>
+            </li>
+
+            <li class="col-3 nav-item" role="presentation">
+              <button
+                class="nav-link d-flex justify-content-center align-items-center"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="false"
+              >
+                <div class="tab-icon">
+                  <i class="las la-broadcast-tower"></i>
+                </div>
+
+                <h3>Pariatur explica nitro dela</h3>
+              </button>
+            </li>
+
+            <li class="col-3 nav-item" role="presentation">
+              <button
+                class="nav-link d-flex justify-content-center align-items-center"
+                id="service-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#service-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="service-tab-pane"
+                aria-selected="false"
+              >
+                <div class="tab-icon">
+                  <i class="las la-gift"></i>
+                </div>
+
+                <h3>Nostrum qui dile node</h3>
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active d-flex"
+              id="home-tab-pane"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
             >
-              <div class="col-3">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active d-flex justify-content-center align-items-center"
-                    id="home-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#home-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="home-tab-pane"
-                    aria-selected="true"
-                  >
-                    <div class="tab-icon">
-                      <i class="las la-sun"></i>
-                    </div>
-
-                    <h3>Modi sit est dela pireda nest</h3>
-                  </button>
-                </li>
-              </div>
-
-              <div class="col-3">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link d-flex justify-content-center align-items-center"
-                    id="profile-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#profile-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="profile-tab-pane"
-                    aria-selected="false"
-                  >
-                    <div class="tab-icon">
-                      <i class="las la-people-carry"></i>
-                    </div>
-
-                    <h3>Unde praesenti mara setra le</h3>
-                  </button>
-                </li>
-              </div>
-              <div class="col-3">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link d-flex justify-content-center align-items-center"
-                    id="contact-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#contact-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="contact-tab-pane"
-                    aria-selected="false"
-                  >
-                    <div class="tab-icon">
-                      <i class="las la-broadcast-tower"></i>
-                    </div>
-
-                    <h3>Pariatur explica nitro dela</h3>
-                  </button>
-                </li>
-              </div>
-              <div class="col-3">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link d-flex justify-content-center align-items-center"
-                    id="service-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#service-tab-pane"
-                    type="button"
-                    role="tab"
-                    aria-controls="service-tab-pane"
-                    aria-selected="false"
-                  >
-                    <div class="tab-icon">
-                      <i class="las la-gift"></i>
-                    </div>
-
-                    <h3>Nostrum qui dile node</h3>
-                  </button>
-                </li>
-              </div>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div
-                class="tab-pane fade show active d-flex"
-                id="home-tab-pane"
-                role="tabpanel"
-                aria-labelledby="home-tab"
-                tabindex="0"
-              >
-                <div class="col-12 col-lg-6 order-md-1">
-                  <div class="tab-left">
-                    <h3>
-                      Omnis fugiat ea explicabo sunt dolorum asperiores sequi
-                      inventore rerum
-                    </h3>
-                    <p>
+              <div class="col-12 col-lg-6 order-md-1">
+                <div class="tab-left">
+                  <h3>
+                    Omnis fugiat ea explicabo sunt dolorum asperiores sequi
+                    inventore rerum
+                  </h3>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum
+                  </p>
+                  <p class="para-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <ul>
+                    <li>
                       Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum
-                    </p>
-                    <p class="para-italic">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <ul>
-                      <li>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </li>
-                      <li>
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit.
-                      </li>
-                      <li>
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        trideta storacalaperda mastiro dolore eu fugiat nulla
-                        pariatur.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-12 col-lg-6 order-md-2">
-                  <div class="tab-right">
-                    <img
-                      src="images/tabs-1.jpg"
-                      class="w-100 d-block img-fluid px-3"
-                      alt=""
-                    />
-                  </div>
+                    </li>
+                    <li>
+                      Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li>
+                      Duis aute irure dolor in reprehenderit in voluptate
+                      trideta storacalaperda mastiro dolore eu fugiat nulla
+                      pariatur.
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div
-                class="tab-pane fade d-flex"
-                id="profile-tab-pane"
-                role="tabpanel"
-                aria-labelledby="profile-tab"
-                tabindex="0"
-              >
-                profile
+              <div class="col-12 col-lg-6 order-md-2">
+                <div class="tab-right">
+                  <img
+                    src="images/tabs-1.jpg"
+                    class="w-100 d-block img-fluid px-3"
+                    alt=""
+                  />
+                </div>
               </div>
-              <div
-                class="tab-pane fade d-flex"
-                id="contact-tab-pane"
-                role="tabpanel"
-                aria-labelledby="contact-tab"
-                tabindex="0"
-              >
-                contact
+            </div>
+            <div
+              class="tab-pane fade d-flex"
+              id="profile-tab-pane"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              <div class="col-12 col-lg-6 order-md-1">
+                <div class="tab-left">
+                  <h3>
+                    Omnis fugiat ea explicabo sunt dolorum asperiores sequi
+                    inventore rerum
+                  </h3>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum
+                  </p>
+                  <p class="para-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <ul>
+                    <li>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li>
+                      Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li>
+                      Duis aute irure dolor in reprehenderit in voluptate
+                      trideta storacalaperda mastiro dolore eu fugiat nulla
+                      pariatur.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div
-                class="tab-pane fade d-flex"
-                id="service-tab-pane"
-                role="tabpanel"
-                aria-labelledby="service-tab"
-                tabindex="0"
-              >
-                service
+              <div class="col-12 col-lg-6 order-md-2">
+                <div class="tab-right">
+                  <img
+                    src="images/tabs-2.jpg"
+                    class="w-100 d-block img-fluid px-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade d-flex"
+              id="contact-tab-pane"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+              tabindex="0"
+            >
+              <div class="col-12 col-lg-6 order-md-1">
+                <div class="tab-left">
+                  <h3>
+                    Omnis fugiat ea explicabo sunt dolorum asperiores sequi
+                    inventore rerum
+                  </h3>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum
+                  </p>
+                  <p class="para-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <ul>
+                    <li>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li>
+                      Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li>
+                      Duis aute irure dolor in reprehenderit in voluptate
+                      trideta storacalaperda mastiro dolore eu fugiat nulla
+                      pariatur.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 order-md-2">
+                <div class="tab-right">
+                  <img
+                    src="images/tabs-3.jpg"
+                    class="w-100 d-block img-fluid px-3"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade d-flex"
+              id="service-tab-pane"
+              role="tabpanel"
+              aria-labelledby="service-tab"
+              tabindex="0"
+            >
+              <div class="col-12 col-lg-6 order-md-1">
+                <div class="tab-left">
+                  <h3>
+                    Omnis fugiat ea explicabo sunt dolorum asperiores sequi
+                    inventore rerum
+                  </h3>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum
+                  </p>
+                  <p class="para-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <ul>
+                    <li>
+                      Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </li>
+                    <li>
+                      Duis aute irure dolor in reprehenderit in voluptate velit.
+                    </li>
+                    <li>
+                      Duis aute irure dolor in reprehenderit in voluptate
+                      trideta storacalaperda mastiro dolore eu fugiat nulla
+                      pariatur.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 order-md-2">
+                <div class="tab-right">
+                  <img
+                    src="images/tabs-4.jpg"
+                    class="w-100 d-block img-fluid px-3"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
