@@ -4,6 +4,7 @@
 $red: #e03a3c;
 // header
 header {
+  padding: 7px;
   .navbar-brand {
     font-family: $poppins;
     font-size: 30px;
@@ -18,13 +19,14 @@ header {
     font-size: 15px;
     font-weight: 600;
     color: #000;
-    display: inline-block;
-    padding: 10px 0 10px 30px;
     transition: 0.3s;
-
+    margin-left: 12px;
     &:hover {
       color: $red;
     }
+  }
+  .btn {
+    margin-left: 10px;
   }
 }
 
@@ -1170,6 +1172,16 @@ header {
 }
 
 @media (max-width: 991.98px) {
-  // header {
-  // }
+  header {
+    .dummy-btn {
+      content: "";
+      right: 200px;
+      top: 17px;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .footer-rights {
+    margin-bottom: 10px;
+  }
 }
