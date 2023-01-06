@@ -18,16 +18,16 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header fixed-top" id="home-section">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
           <a class="navbar-brand" href="#">Presento<span>.</span> </a>
-
+          <!-- 
           <button
             class="btn btn-danger dummy-btn position-absolute d-lg-none justify-content-md-end"
           >
             Get Started
-          </button>
+          </button> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -47,25 +47,35 @@
             <ul class="navbar-nav mb-2 mb-lg-0">
               <!-- me-auto -->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active home"
+                  aria-current="page"
+                  href="#home-section"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about_us_id"
+                <a class="nav-link" aria-current="page" href="#about-section"
                   >About</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#services_id"
+                <a class="nav-link" aria-current="page" href="#services-section"
                   >Services</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#portfolio_id"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#portfolio-section"
                   >Portfolio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#team_id">Team</a>
+                <a class="nav-link" aria-current="page" href="#team-section"
+                  >Team</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Blog</a>
@@ -98,13 +108,13 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#contact_id"
+                <a class="nav-link" aria-current="page" href="#contact-section"
                   >Contact</a
                 >
               </li>
             </ul>
-            <div class="d-flex align-items-center d-none d-lg-block">
-              <a href="#" class="btn btn-danger">
+            <div class="d-flex align-items-center">
+              <a href="#contact-section" class="btn btn-danger">
                 <span>Get Started</span>
               </a>
             </div>
@@ -273,7 +283,7 @@
       <!-- carousel  ends-->
 
       <!--  About start-->
-      <section class="about about-bg">
+      <section class="about about-bg" id="about-section">
         <div class="container">
           <div class="row justify-content-between">
             <div
@@ -704,28 +714,10 @@
           </div>
         </div>
       </section>
-      <!-- dummy tabs end -->
-      <!-- Tabs -->
-      <!-- <section class="tabs">
-        <div class="container">
-          <div class="row">
-            <div class="col-3"><div class="tab-click"></div></div>
-            <div class="col-3"><div class="tab-click"></div></div>
-            <div class="col-3"><div class="tab-click"></div></div>
-            <div class="col-3"><div class="tab-click"></div></div>
-          </div>
-          <div class="row g-3">
-            <div class="col-12 col-lg-6 order-md-1">
-              <div class="tab-left">left</div>
-            </div>
-            <div class="col-12 col-lg-6 order-md-2">
-              <div class="tab-right">right</div>
-            </div>
-          </div>
-        </div>
-      </section> -->
+      <!-- tabs end -->
+
       <!-- Service -->
-      <section class="service">
+      <section class="service" id="services-section">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -829,7 +821,7 @@
         </div>
       </section>
       <!-- portfolio -->
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio-section">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -1513,7 +1505,7 @@
       <!-- faq end -->
 
       <!-- team -->
-      <section class="team">
+      <section class="team" id="team-section">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -1609,7 +1601,7 @@
         </div>
       </section>
       <!-- contact -->
-      <section class="contact">
+      <section class="contact" id="contact-section">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -1706,7 +1698,7 @@
           <div class="row justify-content-between">
             <div class="col-lg-2 col-md-6 col-sm-12">
               <div class="address-link">
-                <h3>Presento <span></span></h3>
+                <h3>Presento <span>.</span></h3>
                 <p>
                   A108 Adam Street <br />New York, NY 535022 <br />United States
                   <br /><br />

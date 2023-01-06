@@ -4,7 +4,8 @@
 $red: #e03a3c;
 // header
 header {
-  padding: 7px;
+  background-color: $white;
+  // padding: 7px;
   .navbar-brand {
     font-family: $poppins;
     font-size: 30px;
@@ -21,10 +22,14 @@ header {
     color: #000;
     transition: 0.3s;
     margin-left: 12px;
+    .nav-link.active {
+      color: $red;
+    }
     &:hover {
       color: $red;
     }
   }
+
   .btn {
     margin-left: 10px;
   }
@@ -40,8 +45,8 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: calc(100vh - 85px);
-  padding-top: 120px;
+  height: 100vh;
+  padding-top: 230px;
   .banner-cont {
     padding: 30px 0 0 0;
     font-family: $raleway;
@@ -1019,15 +1024,9 @@ header {
       margin: 0;
       font-size: 26px;
       font-weight: 700;
-      position: relative;
+
       span {
-        position: absolute;
-        background-color: $red;
-        right: 70px;
-        bottom: 7px;
-        height: 5px;
-        width: 5px;
-        border-radius: 50%;
+        color: $red;
       }
     }
     p {
@@ -1090,23 +1089,24 @@ header {
     p {
       font-family: $open-sans;
       padding-top: 8px;
+      margin-bottom: 30px;
       color: $white;
       font-size: 15px;
       font-weight: 400;
     }
     input {
       padding: 10px 15px;
-      width: 100%;
+      width: 85%;
       font-size: 16px;
       outline: none;
       border: none;
-      border-radius: 5px;
+      border-radius: 25px;
       z-index: -1;
     }
     button {
       z-index: 1;
       position: absolute;
-      top: 104px;
+      top: 117px;
       right: 0px;
       padding: 11px 25px;
       border: none;
@@ -1114,7 +1114,7 @@ header {
       font-size: 16px;
       font-family: "Open Sans", sans-serif;
       font-weight: 400;
-      border-radius: 5px;
+      border-radius: 25px;
 
       &:hover {
         cursor: pointer;
@@ -1172,13 +1172,13 @@ header {
 }
 
 @media (max-width: 991.98px) {
-  header {
-    .dummy-btn {
-      content: "";
-      right: 200px;
-      top: 17px;
-    }
-  }
+  // header {
+  //   .dummy-btn {
+  //     content: "";
+  //     right: 200px;
+  //     top: 17px;
+  //   }
+  // }
 }
 @media (max-width: 767.98px) {
   .footer-rights {
