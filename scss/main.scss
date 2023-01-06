@@ -3,14 +3,33 @@
 
 $red: #e03a3c;
 // header
-// header {
-//   form {
-//   }
-// }
+header {
+  .navbar-brand {
+    font-family: $poppins;
+    font-size: 30px;
+    font-weight: 600;
+    color: #111;
+    span {
+      color: $red;
+    }
+  }
+  .nav-link {
+    font-family: $raleway;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    display: inline-block;
+    padding: 10px 0 10px 30px;
+    transition: 0.3s;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
 
 // banner starts
 .banner {
-  // background-color: gray;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("../images/hero-bg.jpg");
@@ -200,79 +219,151 @@ $red: #e03a3c;
 // dash-board ends
 
 // tabs starts
-.tab-section {
-  padding: 40px 0;
-  .col-3 {
-    width: 23.5%;
-    margin: 0 auto;
-  }
-  li {
-    .nav-link.active {
-      color: $white;
-      background-color: $red;
+// dummy tab
+.tabs-section {
+  padding: 60px 0;
+
+  .nav-pills .nav-link {
+    min-height: 100px;
+    border: 1px solid #7e7e7e;
+    border-radius: unset;
+    display: flex;
+    // background-color: $red;
+    align-items: center;
+    color: #000;
+    i {
+      font-size: 48px;
     }
-    .nav-link {
-      border: 1px solid #b9b9b9;
-      padding: 25px;
-      transition: 0.3s;
-      border-radius: 0;
-      cursor: pointer;
-      color: $black;
-    }
-    .tab-icon {
-      i {
-        font-size: 48px;
-        font-weight: 700;
-        padding-right: 15px;
-      }
-    }
-    h3 {
+    h4 {
+      font-family: $raleway;
       font-size: 18px;
       font-weight: 600;
-      font-family: $raleway;
     }
-  }
-  .tab-left {
-    h3 {
-      font-size: 26px;
-      font-weight: 600;
-      font-family: $raleway;
-      color: #444;
-    }
-    p,
-    li {
-      font-size: 16px;
-      font-weight: 400;
-      font-family: $open-sans;
-      color: #444;
-    }
-    li {
-      list-style-type: none;
-      padding-top: 15px;
-      padding-bottom: 5px;
-      &::before {
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f560";
-        padding-right: 10px;
-        padding-bottom: 5px;
+    &:hover {
+      border: 1px solid #b9b9b9;
+      i,
+      h4 {
         color: $red;
-        font-size: 14px;
       }
     }
-
-    .para-italic {
-      font-style: italic;
+  }
+  .nav-link.active {
+    color: $white;
+    background-color: $red;
+    border-color: $red;
+    &:hover {
+      i,
+      h4 {
+        color: $white;
+      }
     }
   }
-  // .tab-right {
-  // }
 }
+
+// .nav-pills .nav-link .nav-pills .nav-link .nav-pills .nav-link.active,
+// .nav-pills .show > .nav-link {
+//   color: #fff;
+//   background-color: $red;
+// }
+
+.tab-left {
+  font-family: $open-sans;
+  color: #444;
+  h3 {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: $raleway !important;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  li {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  i {
+    color: $red !important;
+  }
+  .para-italic {
+    font-style: italic;
+  }
+}
+
+// dummy tab
+// .tab-section {
+//   padding: 40px 0;
+//   .col-3 {
+//     width: 23.5%;
+//     margin: 0 auto;
+//   }
+//   li {
+//     .nav-link.active {
+//       color: $white;
+//       background-color: $red;
+//     }
+//     .nav-link {
+//       border: 1px solid #b9b9b9;
+//       padding: 25px;
+//       transition: 0.3s;
+//       border-radius: 0;
+//       cursor: pointer;
+//       color: $black;
+//     }
+//     .tab-icon {
+//       i {
+//         font-size: 48px;
+//         font-weight: 700;
+//         padding-right: 15px;
+//       }
+//     }
+//     h3 {
+//       font-size: 18px;
+//       font-weight: 600;
+//       font-family: $raleway;
+//     }
+//   }
+//   .tab-left {
+//     h3 {
+//       font-size: 26px;
+//       font-weight: 600;
+//       font-family: $raleway;
+//       color: #444;
+//     }
+//     p,
+//     li {
+//       font-size: 16px;
+//       font-weight: 400;
+//       font-family: $open-sans;
+//       color: #444;
+//     }
+//     li {
+//       list-style-type: none;
+//       padding-top: 15px;
+//       padding-bottom: 5px;
+//       &::before {
+//         display: inline-block;
+//         font-style: normal;
+//         font-variant: normal;
+//         text-rendering: auto;
+//         -webkit-font-smoothing: antialiased;
+//         font-family: "Font Awesome 5 Free";
+//         font-weight: 900;
+//         content: "\f560";
+//         padding-right: 10px;
+//         padding-bottom: 5px;
+//         color: $red;
+//         font-size: 14px;
+//       }
+//     }
+
+//     .para-italic {
+//       font-style: italic;
+//     }
+//   }
+//   // .tab-right {
+//   // }
+// }
 
 // tabs ends
 
@@ -1015,7 +1106,7 @@ $red: #e03a3c;
       position: absolute;
       top: 104px;
       right: 0px;
-      padding: 10px 25px;
+      padding: 11px 25px;
       border: none;
       color: #fff;
       font-size: 16px;
@@ -1039,6 +1130,7 @@ $red: #e03a3c;
       color: $white;
       font-size: 16px;
       font-weight: 400;
+      margin-bottom: 0;
       span {
         font-size: 18px;
         font-weight: 500;
@@ -1078,9 +1170,6 @@ $red: #e03a3c;
 }
 
 @media (max-width: 991.98px) {
-  nav {
-    form {
-      margin-right: -250px;
-    }
-  }
+  // header {
+  // }
 }
