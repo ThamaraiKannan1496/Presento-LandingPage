@@ -22,12 +22,13 @@ header {
     color: #000;
     transition: 0.3s;
     margin-left: 12px;
-    .nav-link.active {
-      color: $red;
-    }
     &:hover {
       color: $red;
     }
+  }
+  .navbar-nav .show > .nav-link,
+  .navbar-nav .nav-link.active {
+    color: $red;
   }
 
   .btn {
@@ -790,16 +791,14 @@ header {
     font-size: 18px;
     font-weight: 400;
     padding: 20px 0;
-    &:hover {
-      .accordion-button::after {
-        color: $red;
-      }
-      color: $red;
-    }
+
     &:focus {
       box-shadow: none;
       background-color: transparent;
     }
+  }
+  .accordion-button:not(.collapsed) {
+    color: $red;
   }
 }
 // team
